@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SageCrow — The Flock</title>
+<style>
+  :root { --ink:#0e0e10; --paper:#11100f; --panel:#1b1a18; --accent:#c9a227; --text:#ece7dd; --muted:#9a948a; --line:#2a2825; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:var(--paper); }
+  header { padding:80px 24px 48px; text-align:center; border-bottom:1px solid var(--line); }
+  header h1 { font-size:3rem; letter-spacing:.04em; color:var(--accent); }
+  header p { color:var(--muted); margin-top:12px; }
+  nav { display:flex; gap:26px; justify-content:center; padding:18px; border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--paper); }
+  nav a { color:var(--text); text-decoration:none; font-weight:600; font-size:.95rem; }
+  nav a:hover { color:var(--accent); }
+  main { max-width:1040px; margin:0 auto; padding:48px 24px 80px; }
+  section { margin-bottom:64px; }
+  h2 { font-size:1.5rem; margin-bottom:22px; padding-bottom:8px; border-bottom:2px solid var(--accent); display:inline-block; }
+  .doc { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:28px; }
+  .doc .frame { aspect-ratio:16/9; background:#000; border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--muted); margin-bottom:16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:26px; }
+  .card { border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--panel); display:flex; flex-direction:column; }
+  .art { aspect-ratio:1; background:#262320; display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:.85rem; text-align:center; padding:12px; }
+  .card .body { padding:14px 16px 18px; display:flex; flex-direction:column; gap:6px; flex:1; }
+  .card .title { font-weight:600; }
+  .card .price { color:var(--accent); font-weight:700; }
+  .buy { margin-top:auto; padding:9px 0; text-align:center; background:var(--accent); color:#1b1a18; text-decoration:none; border-radius:6px; font-weight:700; font-size:.9rem; }
+  .placeholder { color:var(--muted); font-style:italic; border:1px dashed var(--line); padding:18px; border-radius:8px; }
+  footer { text-align:center; padding:36px 24px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SAGECROW</h1>
+  <p>The Flock — documentary, music, and merch.</p>
+</header>
+<nav>
+  <a href="#documentary">Documentary</a>
+  <a href="#cds">CDs</a>
+  <a href="#merch">Merch</a>
+</nav>
+<main>
+  <section id="documentary">
+    <h2>The Documentary</h2>
+    <div class="doc">
+      <div class="frame">trailer / film embeds here</div>
+      <p class="placeholder" style="border:none;padding:0;">SageCrow documentary — streaming or purchase. Awaiting final film file + cut.</p>
+    </div>
+  </section>
+
+  <section id="cds">
+    <h2>CDs</h2>
+    <div class="grid">
+      <!-- PRODUCT SLOTS: populated once Final Chapter masters + art are pulled from PRODUCTION -->
+      <div class="card">
+        <div class="art">cover art<br>(pending master art)</div>
+        <div class="body">
+          <div class="title">SageCrow — Final Chapter</div>
+          <div class="price">price TBD</div>
+          <a class="buy" href="#">Buy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="merch">
+    <h2>Merch</h2>
+    <p class="placeholder">SageCrow merch — apparel, prints, limited runs. Awaiting product list.</p>
+  </section>
+</main>
+<footer>
+  &copy; SageCrow. sagecrowtheflock.com
+</footer>
+</body>
+</html>
